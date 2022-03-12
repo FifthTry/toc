@@ -79,27 +79,15 @@ string bg-color-dark: #082b32
 string toc-width: 300
 string text-color: #18191a
 string text-color-dark: #EDEDED
-sticky: true
-top: 0
-height: calc 100vh - 0px
-overflow-y: auto
 width: $toc-width
-align: top-left
-padding-left: 10
-padding-top: 15
-padding-right: 20
-padding-bottom: 40
-border-right: 1
-border-color: $border-color
-border-color if $fpm.dark-mode: $border-color-dark
 background-color if $fpm.dark-mode: $bg-color-dark
 background-color:  $bg-color
 
 --- toc-instance:
 $loop$: $toc-obj as $obj
 toc: $obj
-
-
+text-color: $text-color
+text-color-dark: $text-color-dark
 
 
 
@@ -110,8 +98,8 @@ toc: $obj
 
 -- ftd.column toc-instance:
 fpm.toc-item toc:
-optional string text-color: 
-optional string text-color-dark:
+string text-color: #18191a
+string text-color-dark: #EDEDED
 padding-left: 10
 padding-top: 2
 padding-bottom: 2
