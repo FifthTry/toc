@@ -3,10 +3,15 @@
 -- import: fifthtry.github.io/toc/assets
 
 
+-- boolean is-mobile: false
+
+-- is-mobile: true
+if: $ftd.device == mobile
+
 -- ftd.column:
 width: fill
 padding-horizontal: 50
-padding-horizontal if $fpm.mobile: 20
+padding-horizontal if $is-mobile: 20
 background-color: $fpm.design.color.brand.region
 height: fill
 
