@@ -12,7 +12,7 @@ if: $ftd.device == mobile
 width: fill
 padding-horizontal: 50
 padding-horizontal if $is-mobile: 20
-background-color: $fpm.design.color.brand.region
+background-color: $fpm.color.main.background.base
 height: fill
 
 
@@ -76,12 +76,12 @@ toc-obj: $toc
 
 -- ftd.column toc:
 fpm.toc-item list toc-obj:
-ftd.color border-color: $fpm.design.color.brand.on-region
-ftd.color bg-color: $fpm.design.color.brand.region
+ftd.color border-color: $fpm.color.main.text
+ftd.color bg-color: $fpm.color.main.background.base
 string toc-width: 300
-ftd.color text-color: $fpm.design.color.brand.on-region
+ftd.color text-color: $fpm.color.main.text
 width: $toc-width
-background-color:  $fpm.design.color.brand.region
+background-color:  $fpm.color.main.background.base
 
 --- toc-instance:
 $loop$: $toc-obj as $obj
@@ -97,7 +97,7 @@ text-color: $text-color
 
 -- ftd.column toc-instance:
 fpm.toc-item toc:
-ftd.color text-color: $fpm.design.color.brand.on-region
+ftd.color text-color: $fpm.color.main.text
 padding-left: 10
 padding-top: 2
 padding-bottom: 2
@@ -105,7 +105,7 @@ padding-bottom: 2
 --- ftd.text:
 link: $toc.url
 text: $toc.title
-role: $fpm.design.type.label-large
+role: $fpm.type.label-large
 min-width: fit-content
 padding-left: 10
 padding-top: 3
