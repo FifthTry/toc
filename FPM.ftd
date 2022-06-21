@@ -2,5 +2,6 @@
 
 -- fpm.package: fifthtry.github.io/toc
 zip: github.com/fifthtry/toc/archive/refs/heads/main.zip
+base: https://raw.githubusercontent.com/fifthtry/toc/main
 
 -- fpm.dependency: fifthtry.github.io/package-doc
